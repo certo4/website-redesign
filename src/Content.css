@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
+
+
+.content-container {
+  /* position: absolute; */
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  margin-top: 62px;
+  margin-bottom: 150px;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2.5fr 150px 100px auto;
+  grid-template-areas: 
+  "header header header header"
+  ". header2 header2 ."
+  ". sun moon ."
+  "lists lists lists lists";
+}
+
+h1 {
+  color: white;
+  display: inline-block;
+  background: #000505;
+  padding: 10px;
+  font-size: 50px;
+  grid-area: header;
+  place-self: center;
+  font-family: 'Bungee Hairline', cursive;
+  font-size: 120px;
+  text-align: center;
+  box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+  /* border-radius: 10px; */
+}
+
+h2 {
+  grid-area: header2;
+  color: #fff;
+  font-family: Bungee Hairline, cursive;
+  justify-self: center;
+  font-size: 28px;
+}
+
+span.sun {
+  grid-area: sun;
+  color: white;
+  margin-right: 20px;
+  justify-self: end;
+  align-self: start;
+  cursor: pointer;
+}
+
+span.sun:hover {
+  color: white;
+  text-shadow: 0 0 5px white;
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
+span.moon {
+  grid-area: moon;
+  color: white;
+  margin-left: 20px;
+  place-self: start;
+  cursor: pointer;
+}
+
+span.moon:hover {
+  color: white;
+  text-shadow: 0 0 5px white;
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
+.fa-sun, .fa-moon {
+  font-size: 25px;
+}
+
+.lists-container {
+  grid-area: lists;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 3em;
+  grid-template-areas: 
+  "list1 list2";
+}
+
+#first-box {
+  grid-area: list1;
+  width: 400px;
+  height: 400px;
+  place-self: end;
+  color: white;
+  background-color: #000505;
+  padding: 30px 35px 30px 45px;
+  text-align: justify;
+  font-size: 20px;
+  box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 3px;
+  animation-name: none;
+  animation-duration: 0s;
+  /* animation-fill-mode: forward; */
+}
+
+#second-box {
+  grid-area: list2;
+  width: 400px;
+  height: 400px;
+  place-self: start;
+  color: white;
+  background-color: #000505;
+  padding: 30px 35px 30px 45px;
+  text-align: justify;
+  font-size: 20px;
+  box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 3px;
+  animation-name: none;
+  animation-duration: 0s;
+  /* animation-fill-mode: forward; */
+}
+
+/* .ltod {
+  animation-name: light-to-dark;
+  animation-duration: 1s;
+  animation-fill-mode: forward;
+}
+
+.dtol {
+  animation-name: dark-to-light;
+  animation-duration: 1s;
+  animation-fill-mode: forward;
+} */
+
+/* @keyframes light-to-dark {
+  45% {color: white; background: #000505;}
+  50% {color: #000505; background: white;}
+  60% {color: #000505; background: white;}
+  65% {color: white; background: #000505;}
+}
+
+@keyframes dark-to-light {
+  45% {color: #000505; background: white;}
+  50% {color: white; background: #000505;}
+  60% {color: white; background: #000505;}
+  65% {color: #000505; background: white;}  
+} */
+
+@keyframes light-to-dark {
+  100% {color: white; background: #000505;}
+}
+
+@keyframes dark-to-light {
+  100% {color: #000505; background: white;}
+}
