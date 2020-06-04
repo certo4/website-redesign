@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navigation.css';
+import {Link} from 'react-router-dom';
 
 function Navigation() {
   return (
@@ -11,8 +12,12 @@ function Navigation() {
         <span className="linkedin"><i className="fab fa-linkedin-in"></i></span>
       </div>
       <ul className="navigation-menu">
-      <li><a href="#">Info</a></li>
-        <li><a href="#">Projects</a></li>
+        <Link to='/'>
+          <li><a href="#">Info</a></li>
+        </Link>
+        <Link to='/projects'>
+          <li><a href="#">Projects</a></li>
+        </Link>
         <li><a href="#">Contact</a></li>
       </ul>
       </div>

@@ -7,8 +7,12 @@ body {
   display:none;
 }
 
-.shooting-stars {
-  animation: shooting-star 3s;
+.shooting-stars1 {
+  animation: shooting-star1 2s;
+}
+
+.shooting-stars2 {
+  animation: shooting-star2 1s;
 }
 
 #shooting-stars1 {
@@ -31,10 +35,16 @@ body {
   /* animation: shooting-star 3s infinite; */
 }
 
-@keyframes shooting-star {
+@keyframes shooting-star1 {
   10% {opacity: 1;}
-  90% {opacity: 1;}
+  80% {opacity: 1;}
   100% {transform: translate(-600px,600px); opacity: 0;}
+}
+
+@keyframes shooting-star2 {
+  10% {opacity: 1;}
+  80% {opacity: 1;}
+  100% {transform: translate(-500px,500px); opacity: 0;}
 }
 
 .sky-container {

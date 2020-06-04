@@ -2,7 +2,7 @@ import React from 'react';
 import './Background.css';
 
 setInterval(function() {
-  let top = Math.floor(Math.random() * 81) + 11; 
+  let top = Math.floor(Math.random() * 81) + 10; 
   let left = Math.floor(Math.random() * 81) + 10; 
 
   document.getElementById("shooting-stars1").style.top = top + "%";
@@ -11,16 +11,37 @@ setInterval(function() {
   void document.getElementById("shooting-stars1").offsetWidth;
   void document.getElementById("shooting-stars1").offsetHeight;
 
-  document.getElementById("shooting-stars1").classList.remove('shooting-stars');
+  document.getElementById("shooting-stars1").classList.remove('shooting-stars1');
 
   void document.getElementById("shooting-stars1").offsetWidth;
   void document.getElementById("shooting-stars1").offsetHeight;
 
-  document.getElementById("shooting-stars1").classList.add('shooting-stars');
+  document.getElementById("shooting-stars1").classList.add('shooting-stars1');
 
   void document.getElementById("shooting-stars1").offsetWidth;
   void document.getElementById("shooting-stars1").offsetHeight;
 }, 5000);
+
+setInterval(function() {
+  let top = Math.floor(Math.random() * 81) + 10; 
+  let left = Math.floor(Math.random() * 81) + 10; 
+
+  document.getElementById("shooting-stars2").style.top = top + "%";
+  document.getElementById("shooting-stars2").style.left = left + "%";
+
+  void document.getElementById("shooting-stars2").offsetWidth;
+  void document.getElementById("shooting-stars2").offsetHeight;
+
+  document.getElementById("shooting-stars2").classList.remove('shooting-stars2');
+
+  void document.getElementById("shooting-stars2").offsetWidth;
+  void document.getElementById("shooting-stars2").offsetHeight;
+
+  document.getElementById("shooting-stars2").classList.add('shooting-stars2');
+
+  void document.getElementById("shooting-stars2").offsetWidth;
+  void document.getElementById("shooting-stars2").offsetHeight;
+}, 3000);
 
 
 function Background() {

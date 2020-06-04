@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
+
+.not-found-container {
+  height: 100vh;
+  min-height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h1-not-found {
+  color: white;
+  display: inline-block;
+  background: #000505;
+  padding: 10px;
+  font-size: 50px;
+  font-family: 'Bungee Hairline', cursive;
+  font-size: 120px;
+}

@@ -2,57 +2,45 @@ import React from 'react';
 import './Content.css';
 
 document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById("sun").addEventListener('click', function() {
-    document.getElementById("header1").style.animationName = "dark-to-light";
-    document.getElementById("header1").style.animationDuration = "3s";
+  if (document.getElementById("sun") || document.getElementById("moon")) {
+    document.getElementById("sun").addEventListener('click', function() {
 
-    setTimeout(function() {
-      document.getElementById("header1").style.backgroundColor = "white";
-      document.getElementById("header1").style.color = "#000505";
-    }, 3000);
+      document.getElementById("first-box").style.animationName = "dark-to-light";
+      document.getElementById("first-box").style.animationDuration = ".5s";
+  
+      setTimeout(function() {
+        document.getElementById("first-box").style.backgroundColor = "white";
+        document.getElementById("first-box").style.color = "#000505";
+      }, 500);
+  
+      document.getElementById("second-box").style.animationName = "dark-to-light";
+      document.getElementById("second-box").style.animationDuration = ".5s";
+  
+      setTimeout(function() {
+        document.getElementById("second-box").style.backgroundColor = "white";
+        document.getElementById("second-box").style.color = "#000505";
+      }, 500);
+    });
 
-    document.getElementById("first-box").style.animationName = "dark-to-light";
-    document.getElementById("first-box").style.animationDuration = "3s";
+    document.getElementById("moon").addEventListener('click', function() {
 
-    setTimeout(function() {
-      document.getElementById("first-box").style.backgroundColor = "white";
-      document.getElementById("first-box").style.color = "#000505";
-    }, 3000);
-
-    document.getElementById("second-box").style.animationName = "dark-to-light";
-    document.getElementById("second-box").style.animationDuration = "3s";
-
-    setTimeout(function() {
-      document.getElementById("second-box").style.backgroundColor = "white";
-      document.getElementById("second-box").style.color = "#000505";
-    }, 3000);
-  });
-
-  document.getElementById("moon").addEventListener('click', function() {
-    document.getElementById("header1").style.animationName = "light-to-dark";
-    document.getElementById("header1").style.setProperty("animation-duration", "3s");
-
-    setTimeout(function() {
-      document.getElementById("header1").style.backgroundColor = "#000505";
-      document.getElementById("header1").style.color = "white";
-    }, 3000);
-
-    document.getElementById("first-box").style.animationName = "light-to-dark";
-    document.getElementById("first-box").style.setProperty("animation-duration", "3s");
-
-    setTimeout(function() {
-      document.getElementById("first-box").style.backgroundColor = "#000505";
-      document.getElementById("first-box").style.color = "white";
-    }, 3000);
-
-    document.getElementById("second-box").style.animationName = "light-to-dark";
-    document.getElementById("second-box").style.animationDuration = "3s";
-
-    setTimeout(function() {
-      document.getElementById("second-box").style.backgroundColor = "#000505";
-      document.getElementById("second-box").style.color = "white";
-    }, 3000);
-  });
+      document.getElementById("first-box").style.animationName = "light-to-dark";
+      document.getElementById("second-box").style.animationDuration = ".5s";
+  
+      setTimeout(function() {
+        document.getElementById("first-box").style.backgroundColor = "#000505";
+        document.getElementById("first-box").style.color = "white";
+      }, 500);
+  
+      document.getElementById("second-box").style.animationName = "light-to-dark";
+      document.getElementById("second-box").style.animationDuration = ".5s";
+  
+      setTimeout(function() {
+        document.getElementById("second-box").style.backgroundColor = "#000505";
+        document.getElementById("second-box").style.color = "white";
+      }, 500);
+    });
+  }
 });
 
 function Content() {
