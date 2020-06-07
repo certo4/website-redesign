@@ -1,0 +1,65 @@
+.card-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  margin-top: 62px;
+  margin-bottom: 150px;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr repeat(4, 1fr);
+  grid-template-rows: 2.5fr auto;
+  grid-column-gap: 50px;
+  grid-template-areas: 
+  ". card-header card-header card-header card-header ."
+  ". card-image card-image card-text card-text ."; 
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+h1.card-h1 {
+  color: white;
+  display: inline-block;
+  background: #000505;
+  padding: 10px;
+  font-size: 50px;
+  grid-area: card-header;
+  place-self: center;
+  font-family: 'Bungee Hairline', cursive;
+  font-size: 120px;
+  text-align: center;
+  box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+  /* border-radius: 10px; */
+  transform: translateY(-100px);
+  opacity: 0;
+  animation: moveDown 1s ease-out forwards;
+  grid-area: card-header;
+}
+
+.card-img {
+  height: 400px;
+  width: 400px;
+  justify-self: end;
+  grid-area: card-image;
+  border-radius: 3px;
+  box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+}
+
+.card-info {
+  grid-area: card-text;
+  width: 500px;
+  height: auto;
+  grid-area: card-text;
+  place-self: start;
+  color: white;
+  background-color: #000505;
+  padding: 30px 35px 30px 45px;
+  text-align: justify;
+  font-size: 20px;
+  box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 3px;
+  animation-name: none;
+  animation-duration: 0s;
+  margin: 0;
+}

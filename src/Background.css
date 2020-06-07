@@ -74,6 +74,16 @@ body {
   display:block;
   background:url(https://cdn2.hubspot.net/hubfs/5964876/Personal%20Website/Rewind/stars-total%20flipped.png) repeat top center;
   z-index:0;
+  animation-name: shine-section-0;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes shine-section-0 {
+  0%   {opacity: 1;}
+  50%  {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .stars-1 {
@@ -95,7 +105,7 @@ body {
 
 @keyframes shine-section-1 {
   0%   {opacity: 1;}
-  50%  {opacity: 0.2;}
+  50%  {opacity: 0;}
   100% {opacity: 1;}
 }
 
@@ -117,9 +127,9 @@ body {
 }
 
 @keyframes shine-section-2 {
-  0%   {opacity: 0.2;}
+  0%   {opacity: 0;}
   50%  {opacity: 1;}
-  100% {opacity: 0.2;}
+  100% {opacity: 0;}
 }
 
 .stars-3 {
@@ -140,9 +150,9 @@ body {
 }
 
 @keyframes shine-section-3 {
-  0%   {opacity: 0.1;}
+  0%   {opacity: 0;}
   50%  {opacity: 1;}
-  100% {opacity: 0.1;}
+  100% {opacity: 0;}
 }
 
 .stars-4 {

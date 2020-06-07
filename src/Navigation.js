@@ -13,7 +13,7 @@ function Navigation() {
       </div>
       <ul className="navigation-menu">
         <Link to='/'>
-          <li><a href="#">Info</a></li>
+          <li id="projects-link"><a href="#">Info</a></li>
         </Link>
         <Link to='/projects'>
           <li><a href="#">Projects</a></li>

@@ -21,7 +21,7 @@
   "lists lists lists lists";
 }
 
-h1 {
+h1.header-home {
   color: white;
   display: inline-block;
   background: #000505;
@@ -105,6 +105,13 @@ span.moon:hover {
   gap: 3em;
   grid-template-areas: 
   "list1 list2";
+  opacity: 0;
+  animation: fadeUp 1s forwards;
+  transform: translateY(100px);
+}
+
+@keyframes fadeUp {
+  to {opacity: 1; transform: translateY(0px);}
 }
 
 #first-box {
@@ -141,9 +148,9 @@ span.moon:hover {
 }
 
 @keyframes light-to-dark {
-  100% {color: white; background: #000505;}
+  100% {color: #ced3dc; background: #000505;}
 }
 
 @keyframes dark-to-light {
-  100% {color: #000505; background: white;}
+  100% {color: #000505; background: #ced3dc;}
 }

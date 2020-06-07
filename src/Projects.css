@@ -1,0 +1,122 @@
+.projects-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  margin-top: 62px;
+  padding-top: 100px;
+  margin-bottom: 150px;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100px auto;
+  grid-template-areas: 
+  ". . sun-projects moon-projects . ."
+  "project1 project1 project2 project2 project3 project3";
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.project-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 550px;
+  width: 500px;
+  border-radius: 5px;
+  box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+}
+
+#project1 {
+  background-color: #000505;
+  color: white;
+  grid-area: project1;
+  justify-self: end;
+}
+
+#project2 {
+  background-color: #000505;
+  color: white;
+  grid-area: project2;
+  justify-self: center;
+}
+
+#project3 {
+  background-color: #000505;
+  color: white;
+  grid-area: project3;
+  justify-self: start;
+}
+
+span.sun-projects {
+  grid-area: sun-projects;
+  color: white;
+  margin-right: 20px;
+  justify-self: end;
+  align-self: start;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 1s ease-in;
+  animation-fill-mode: forwards;
+}
+
+span.sun-projects:hover {
+  color: white;
+  text-shadow: 0 0 5px white;
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
+span.moon-projects {
+  grid-area: moon-projects;
+  color: white;
+  margin-left: 20px;
+  place-self: start;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+span.moon-projects:hover {
+  color: white;
+  text-shadow: 0 0 5px white;
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
+.img-project1, .img-project2, .img-project3 {
+  width: 350px;
+  height: 350px;
+  border-radius: 5px;
+}
+
+button {
+  background: #262a2a;
+  color: white;
+  padding: 10px 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  /* background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); */
+  transform: scale(1.3);
+  transition: transform .5s ease;
+  /* animation: b1-color 1s infinite; */
+}
+
+@keyframes b1-color {
+  33% {background-color: #00c6fb;}
+  66% {background-color: #005bea;}
+  100% {background-color: blue;}
+}
+
+.h2-projects {
+  font-family: Bungee Hairline, cursive;
+  justify-self: center;
+  font-size: 28px;
+}
