@@ -64,3 +64,18 @@ ul.navigation-menu li {
   font-family: 'Noto Sans KR', sans-serif;
   letter-spacing: 2px;
 }
+
+ul.navigation-menu li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width .3s;
+  margin-top: 6px;
+}
+
+ul.navigation-menu li a:hover::after {
+  width: 100%;
+  transition: width .3s;
+}

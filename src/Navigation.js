@@ -13,12 +13,12 @@ function Navigation() {
       </div>
       <ul className="navigation-menu">
         <Link to='/'>
-          <li id="projects-link"><a href="#">Info</a></li>
+          <li id="home-link"><a href="#">Info</a></li>
         </Link>
         <Link to='/projects'>
-          <li><a href="#">Projects</a></li>
+          <li><a id="projects-link" href="#">Projects</a></li>
         </Link>
-        <li><a href="#">Contact</a></li>
+        <li><a id="contact-link" href="#">Contact</a></li>
       </ul>
       </div>
     </header>
