@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   height: auto;
+  min-height: 100vh;
   margin-top: 62px;
   padding-top: 100px;
   margin-bottom: 150px;
@@ -119,4 +120,64 @@ button:hover {
   font-family: Bungee Hairline, cursive;
   justify-self: center;
   font-size: 28px;
+}
+
+/* MEDIA QUERIES */ 
+
+@media only screen and (max-width: 1630px) {
+  .projects-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px auto auto;
+    grid-gap: 50px;
+    grid-template-areas: 
+    ". sun-projects moon-projects ."
+    "project1 project1 project2 project2"
+    ". project3 project3 .";
+  }
+
+  #project1 {
+    justify-self: end;
+  }
+
+  #project2 {
+    justify-self: start;
+  }
+
+  #project3 {
+    justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px auto auto;
+    grid-gap: 50px;
+    grid-template-areas: 
+    "sun-projects moon-projects"
+    "project1 project1"
+    "project2 project2"
+    "project3 project3";
+  }
+
+  #project1, #project2, #project3 {
+    justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .h2-projects {
+    text-align: center;
+  }
+
+  .project-card {
+    height: 450px;
+    width: 300px;
+  }
+
+  .img-project1, .img-project2, .img-project3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+  }
 }

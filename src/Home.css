@@ -101,8 +101,8 @@ span.moon:hover {
 .lists-container {
   grid-area: lists;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-template-rows: auto auto;
   gap: 3em;
   grid-template-areas: 
   "list1 list2";
@@ -154,4 +154,31 @@ span.moon:hover {
 
 @keyframes dark-to-light {
   100% {color: #000505; background: #ced3dc;}
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1020px) {
+  .lists-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  h1.header-home {
+    font-size: 90px;
+  } 
+}
+
+@media only screen and (max-width: 540px) {
+  h1.header-home {
+    font-size: 60px;
+  } 
+
+  #first-box, #second-box {
+    width: 300px;
+  }
 }

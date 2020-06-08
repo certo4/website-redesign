@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   height: auto;
+  min-height: 100vh;
   margin-top: 62px;
   margin-bottom: 150px;
   background-color: transparent;
@@ -62,4 +63,54 @@ h1.card-h1 {
   animation-name: none;
   animation-duration: 0s;
   margin: 0;
+}
+
+@media only screen and (max-width: 1230px) {
+  .card-container {
+    grid-template-columns: .5fr .5fr repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .card-info {
+    width: 400px;
+  }
+
+  .card-img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 916px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .card-info, .card-img {
+    margin: 50px auto;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  h1.card-h1 {
+    font-size: 90px;
+  } 
+}
+
+@media only screen and (max-width: 540px) {
+  h1.card-h1 {
+    font-size: 60px;
+  } 
+
+  .card-info {
+    width: 300px;
+  }
+
+  .card-img {
+    width: 250px;
+    height: 250px;
+  }
 }

@@ -66,7 +66,6 @@ function Projects() {
           <Link to="/card">
             <button className="b1">Learn more</button>
           </Link>
-
         </div>
         <div id="project2" className="project-card">
           <img className="img-project2" src="https://www.camilarovalino.com/hubfs/Billie-Eilish-Everything-I-Wanted.jpg" alt="billie-eilish" />

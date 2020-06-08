@@ -11,6 +11,10 @@ function Navigation() {
         <span className="github"><i className="fab fa-github-alt"></i></span>
         <span className="linkedin"><i className="fab fa-linkedin-in"></i></span>
       </div>
+      {/* <div className="mode-toggle">
+        <span className="sun-nav" id="sun"><i class="fas fa-sun"></i></span>
+        <span className="moon-nav" id="moon"><i class="fas fa-moon"></i></span>
+      </div> */}
       <ul className="navigation-menu">
         <Link to='/'>
           <li id="home-link"><a href="#">Info</a></li>
