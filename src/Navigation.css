@@ -9,14 +9,18 @@
   background-color: #000505;
   z-index: 999;
   display: grid;
-  grid-template-columns: .65fr repeat(4, 1fr);
+  /* grid-template-columns: .65fr repeat(4, 1fr); */
+  grid-template-columns: .65fr 1fr .35fr repeat(3, 1fr);
   grid-template-rows: 62px;
+  /* grid-template-areas: 
+  "logo icons toggle menuItems menuItems"; */
   grid-template-areas: 
-  "logo icons toggle menuItems menuItems";
+  "logo logo-icons . toggle menuItems menuItems";
 }
 
 .logo {
   height: 64px;
+  /* grid-area: logo; */
   grid-area: logo;
   justify-self: end;
 }
@@ -24,15 +28,18 @@
 .icons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 60px;
+  /* justify-content: space-between; */
+  width: 120px;
   margin-left: 40px;
   justify-self: start;
+  line-height: 62px;
+  grid-area: logo-icons;
 }
 
 span.github, span.linkedin {
-  grid-area: icons;
+  /* grid-area: icons; */
   color: white;
+  margin: 16px;
 }
 
 .fa-github-alt, .fa-linkedin-in {
@@ -86,10 +93,9 @@ ul.navigation-menu li a:hover::after {
   transition: width .3s;
 }
 
-/* span.sun-nav {
-  grid-area: sun;
-  color: white;
-  margin-right: 20px;
+span.sun-nav {
+  grid-area: icons;
+  color: #ced3dc;
   justify-self: end;
   align-self: start;
   cursor: pointer;
@@ -99,16 +105,15 @@ ul.navigation-menu li a:hover::after {
 }
 
 span.sun-nav:hover {
-  color: white;
-  text-shadow: 0 0 5px white;
+  color: grey;
+  text-shadow: 0 0 5px grey;
   transform: scale(1.3);
   transition: 0.5s;
 }
 
 span.moon-nav {
-  grid-area: moon;
-  color: white;
-  margin-left: 20px;
+  grid-area: icons;
+  color: grey;
   place-self: start;
   cursor: pointer;
   opacity: 0;
@@ -116,12 +121,225 @@ span.moon-nav {
 }
 
 span.moon-nav:hover {
-  color: white;
-  text-shadow: 0 0 5px white;
+  color: grey;
+  text-shadow: 0 0 5px grey;
   transform: scale(1.3);
   transition: 0.5s;
-} */
+}
 
-/* .fa-sun, .fa-moon {
-  font-size: 10px;
-} */
+.fa-sun, .fa-moon {
+  font-size: 18px;
+}
+
+span.sun-nav-l {
+  grid-area: icons;
+  color: #ced3dc;
+  justify-self: end;
+  align-self: start;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  margin-right: 16px;
+}
+
+span.sun-nav-l:hover {
+  color: #ced3dc;
+  text-shadow: 0 0 5px #ced3dc;
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
+span.moon-nav-l {
+  grid-area: icons;
+  color: #ced3dc;
+  place-self: start;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+span.moon-nav-l:hover {
+  color: #ced3dc;
+  text-shadow: 0 0 5px #ced3dc;
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
+/* HAMBURGER MENU */
+
+.mobile-menu-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  background-color: #000505;
+  z-index: 999;
+  /* grid-template-columns: .65fr repeat(4, 1fr); */
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 62px;
+  /* grid-template-areas: 
+  "logo icons toggle menuItems menuItems"; */
+  grid-template-areas: 
+  ". . . . . . mobileIcon";
+}
+
+.menu-icon {
+  color: white;
+  grid-area: mobileIcon;
+  place-self: center;
+  cursor: pointer;
+}
+
+.fas.fa-bars {
+  font-size: 20px;
+}
+
+.mobile-menu {
+  display: none;
+  width: 100vw;
+  background-color: #000505;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  min-height: 410px;
+  z-index: 999;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: 
+  ". . m-close"
+  ". m-toggle ."
+  ". m-menuItems ."
+  ". m-menuIcons ."
+  ". . .";
+}
+
+.close-mobile {
+  color: white;
+  grid-area: m-close;
+  justify-self: end;
+  margin-top: 20px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.fa-times {
+  font-size: 25px;
+}
+
+.mobile-toggle {
+  grid-area: m-toggle;
+  place-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "m-sun m-moon";
+}
+
+span.sun-nav-m {
+  grid-area: m-sun;
+  color: #ced3dc;
+  justify-self: end;
+  align-self: start;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  margin-right: 16px;
+}
+
+span.moon-nav-m {
+  grid-area: m-moon;
+  color: #ced3dc;
+  place-self: start;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+span.moon-nav-m i.fa-moon, span.sun-nav-m i.fa-sun {
+  font-size: 30px;
+}
+
+ul.mobile-navigation-menu {
+  grid-area: m-menuItems;
+  color: white;
+  place-self: center;
+  list-style-type: none;
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  padding-inline-start: 0px;  
+}
+
+ul.mobile-navigation-menu li a, ul.mobile-navigation-menu a {
+  display: block;
+  color: white;
+  padding: 25px;
+  font-weight: bolder;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: 'Noto Sans KR', sans-serif;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.icons-m {
+  grid-area: m-menuIcons;
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "m-github m-linkedin";
+}
+
+span.github-m {
+  grid-area: m-github;
+  color: white;
+  justify-self: end;
+  align-self: start;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  margin-right: 16px;
+}
+
+span.linkedin-m {
+  grid-area: m-linkedin;
+  color: white;
+  place-self: start;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+span.linkedin-m i.fa-linkedin-in, span.github-m i.fa-github-alt {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 780px) {
+  .header-container {
+    display: none;
+  }
+
+  .mobile-menu-container {
+    display: grid; 
+  }
+
+  /* .mobile-menu {
+    display: grid;
+  } */
+}

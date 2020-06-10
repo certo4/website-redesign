@@ -14,11 +14,16 @@
   background-color: transparent;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 2.5fr 150px 100px auto;
-  grid-template-areas: 
+  /* grid-template-rows: 2.5fr 150px 100px auto; */
+  grid-template-rows: 2.5fr 150px auto;
+  /* grid-template-areas: 
   "header header header header"
   ". header2 header2 ."
   ". sun moon ."
+  "lists lists lists lists"; */
+  grid-template-areas: 
+  "header header header header"
+  ". header2 header2 ."
   "lists lists lists lists";
 }
 
@@ -94,9 +99,9 @@ span.moon:hover {
   transition: 0.5s;
 }
 
-.fa-sun, .fa-moon {
+/* .fa-sun, .fa-moon {
   font-size: 25px;
-}
+} */
 
 .lists-container {
   grid-area: lists;

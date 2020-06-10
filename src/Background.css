@@ -61,6 +61,7 @@ body {
   padding: 0;
   position: fixed;
   min-height: 540px;
+  min-width: 385px;
 }
 
 .stars-0 {

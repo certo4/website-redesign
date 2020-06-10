@@ -62,8 +62,8 @@ function Content() {
     <div className="content-container">
       <h1 className="header-home" id="header1">Camila Rovalino</h1>
       <h2>Developer</h2>
-      <span className="sun" id="sun" onClick={homeDarkToLight}><i class="fas fa-sun"></i></span>
-      <span className="moon" id="moon" onClick={homeLightToDark}><i class="fas fa-moon"></i></span>
+      {/* <span className="sun" id="sun" onClick={homeDarkToLight}><i class="fas fa-sun"></i></span>
+      <span className="moon" id="moon" onClick={homeLightToDark}><i class="fas fa-moon"></i></span> */}
       <div className="lists-container">
         <ul id="first-box">
           <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio aenean sed adipiscing diam donec.<br /><br /></li>

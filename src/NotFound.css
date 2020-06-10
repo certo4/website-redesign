@@ -3,6 +3,7 @@
 .not-found-container {
   height: 100vh;
   min-height: 600px;
+  min-width: 385px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -17,4 +18,16 @@
   font-size: 50px;
   font-family: 'Bungee Hairline', cursive;
   font-size: 120px;
+}
+
+@media only screen and (max-width: 710px) {
+  .h1-not-found {
+    font-size: 90px;
+  } 
+}
+
+@media only screen and (max-width: 540px) {
+  .h1-not-found {
+    font-size: 60px;
+  } 
 }

@@ -3,6 +3,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  min-width: 385px;
   height: 150px;
   background-color: #000505;
   z-index: 999;
