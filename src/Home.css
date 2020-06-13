@@ -28,9 +28,9 @@
 }
 
 h1.header-home {
-  color: white;
   display: inline-block;
-  background: #000505;
+  /* color: white;
+  background: #000505; */
   padding: 10px;
   font-size: 50px;
   grid-area: header;
@@ -125,8 +125,8 @@ span.moon:hover {
   width: 400px;
   height: 400px;
   place-self: end;
-  color: white;
-  background-color: #000505;
+  /* color: white;
+  background-color: #000505; */
   padding: 30px 35px 30px 45px;
   text-align: justify;
   font-size: 20px;
@@ -141,8 +141,8 @@ span.moon:hover {
   width: 400px;
   height: 400px;
   place-self: start;
-  color: white;
-  background-color: #000505;
+  /* color: white;
+  background-color: #000505; */
   padding: 30px 35px 30px 45px;
   text-align: justify;
   font-size: 20px;
@@ -151,6 +151,16 @@ span.moon:hover {
   animation-name: none;
   animation-duration: 0s;
   /* animation-fill-mode: forward; */
+}
+
+.dark {
+  color: white;
+  background-color: #000505;
+}
+
+.light {
+  color: #000505; 
+  background-color: #ced3dc;
 }
 
 @keyframes light-to-dark {

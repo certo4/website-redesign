@@ -1,6 +1,8 @@
 import React from 'react';
 import './Projects.css';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import { textColor, backgroundColor } from './theme';
 
 function darkToLight() {
   
@@ -56,27 +58,32 @@ function darkToLight() {
 }
 
 function Projects() {
+  const Card = styled.div `
+    color: ${textColor};
+    background: ${backgroundColor};
+  `
+
   return (
       <div className="projects-container">
-        <span className="sun-projects" id="sun-projects" onClick={darkToLight}><i class="fas fa-sun"></i></span>
-        <span className="moon-projects" id="moon-projects" onClick={lightToDark}><i class="fas fa-moon"></i></span>
-        <div id="project1" className="project-card">
+        {/* <span className="sun-projects" id="sun-projects" onClick={darkToLight}><i class="fas fa-sun"></i></span>
+        <span className="moon-projects" id="moon-projects" onClick={lightToDark}><i class="fas fa-moon"></i></span> */}
+        <Card id="project1" className="project-card">
           <img className="img-project1" src="https://www.camilarovalino.com/hubfs/Billie-Eilish-Everything-I-Wanted.jpg" alt="billie-eilish" />
           <h3 className="h2-projects" id="h2-projects">Lorem ipsum dolor</h3>
           <Link to="/card">
             <button className="b1">Learn more</button>
           </Link>
-        </div>
-        <div id="project2" className="project-card">
+        </Card>
+        <Card id="project2" className="project-card">
           <img className="img-project2" src="https://www.camilarovalino.com/hubfs/Billie-Eilish-Everything-I-Wanted.jpg" alt="billie-eilish" />
           <h3 className="h2-projects" id="h2-projects">Lorem ipsum dolor</h3>
           <button className="b2">Learn more</button>
-        </div>
-        <div id="project3" className="project-card">
+        </Card>
+        <Card id="project3" className="project-card">
           <img className="img-project3" src="https://www.camilarovalino.com/hubfs/Billie-Eilish-Everything-I-Wanted.jpg" alt="billie-eilish" />
           <h3 className="h2-projects" id="h2-projects">Lorem ipsum dolor</h3>
           <button className="b3">Learn more</button>
-        </div>
+        </Card>
       </div>
   );
 }

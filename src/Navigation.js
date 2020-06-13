@@ -1,20 +1,39 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import './Navigation.css';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { useTheme } from './ThemeContext';
 
 function closeMobileMenu() {
-  document.getElementById("mobile-menu").style.display = "none";
+  document.getElementById("mobile-menu").style.animationName = "fadeOut";
+  document.getElementById("mobile-menu").style.animationDuration = ".5s";
+
+  setTimeout(function() {
+    document.getElementById("mobile-menu").style.display = "none";
+  }, 500);
+  // document.getElementById("mobile-menu").style.display = "none";
   // document.getElementById("footer").style.display = "grid";
 }
 
 function openMobileMenu() {
-  document.getElementById("mobile-menu").style.display = "grid";
+  document.getElementById("mobile-menu").style.animationName = "fadeIn";
+  document.getElementById("mobile-menu").style.animationDuration = ".5s";
+
+  setTimeout(function() {
+    document.getElementById("mobile-menu").style.display = "grid";
+  }, 500);
   // document.getElementById("footer").style.display = "none";
 }
 
 function Navigation() {
+  const themeToggle = useTheme();
+
+  function mobileToggle() {
+    themeToggle.toggle();
+    closeMobileMenu();
+  }
+
   return (
-    <header>
+      <header>
       <div className="header-container">
       <img className="logo" src="https://www.camilarovalino.com/hubfs/Billie-Eilish-Everything-I-Wanted.jpg" alt="billie-eilish" />
       <div className="icons">
@@ -22,8 +41,8 @@ function Navigation() {
         <span className="linkedin"><i className="fab fa-linkedin-in"></i></span>
       </div>
       <div className="mode-toggle">
-        <span className="sun-nav-l" id="sun"><i class="fas fa-sun"></i></span>
-        <span className="moon-nav-l" id="moon"><i class="fas fa-moon"></i></span>
+        <span className="sun-nav-l" id="sun" onClick={() => themeToggle.toggle()}><i class="fas fa-sun"></i></span>
+        <span className="moon-nav-l" id="moon" ><i class="fas fa-moon"></i></span>
       </div>
       <ul className="navigation-menu">
         <Link to='/'>
@@ -41,7 +60,7 @@ function Navigation() {
         <span className="close-mobile" onClick={closeMobileMenu}><i class="fas fa-times"></i></span>
           {/* <div className="m-menu-items"> */}
             <div className="mobile-toggle">
-              <span className="sun-nav-m" id="sun" onClick={closeMobileMenu}><i class="fas fa-sun"></i></span>
+              <span className="sun-nav-m" id="sun" onClick={mobileToggle}><i class="fas fa-sun"></i></span>
               <span className="moon-nav-m" id="moon" onClick={closeMobileMenu}><i class="fas fa-moon"></i></span>
             </div>
             <ul className="mobile-navigation-menu">

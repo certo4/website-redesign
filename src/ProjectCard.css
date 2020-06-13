@@ -21,9 +21,9 @@
 }
 
 h1.card-h1 {
-  color: white;
   display: inline-block;
-  background: #000505;
+  /* color: white;
+  background: #000505; */
   padding: 10px;
   font-size: 50px;
   grid-area: card-header;
@@ -54,8 +54,8 @@ h1.card-h1 {
   height: auto;
   grid-area: card-text;
   place-self: start;
-  color: white;
-  background-color: #000505;
+  /* color: white;
+  background-color: #000505; */
   padding: 30px 35px 30px 45px;
   text-align: justify;
   font-size: 20px;

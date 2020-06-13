@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
 import Background from './Background';
 import Navigation from './Navigation';
 import Home from './Home';
@@ -6,7 +7,9 @@ import Projects from './Projects';
 import Footer from './Footer';
 import NotFound from './NotFound';
 import ProjectCard from './ProjectCard';
+
 import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
+
 
 function App() {
   return (

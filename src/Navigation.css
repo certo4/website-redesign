@@ -211,7 +211,7 @@ span.moon-nav-l:hover {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-template-areas: 
-  ". . m-close"
+  "m-close . ."
   ". m-toggle ."
   ". m-menuItems ."
   ". m-menuIcons ."
@@ -221,9 +221,9 @@ span.moon-nav-l:hover {
 .close-mobile {
   color: white;
   grid-area: m-close;
-  justify-self: end;
+  justify-self: start;
   margin-top: 20px;
-  margin-right: 40px;
+  margin-left: 40px;
   cursor: pointer;
 }
 
@@ -328,6 +328,10 @@ span.linkedin-m {
 
 span.linkedin-m i.fa-linkedin-in, span.github-m i.fa-github-alt {
   font-size: 30px;
+}
+
+@keyframes fadeOut {
+  to {opacity: 0;}
 }
 
 @media only screen and (max-width: 780px) {

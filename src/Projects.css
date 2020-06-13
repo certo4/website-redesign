@@ -12,9 +12,8 @@
   background-color: transparent;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 100px auto;
+  grid-template-rows: auto;
   grid-template-areas: 
-  ". . sun-projects moon-projects . ."
   "project1 project1 project2 project2 project3 project3";
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
@@ -32,22 +31,22 @@
 }
 
 #project1 {
-  background-color: #000505;
-  color: white;
+  /* background-color: #000505;
+  color: white; */
   grid-area: project1;
   justify-self: end;
 }
 
 #project2 {
-  background-color: #000505;
-  color: white;
+  /* background-color: #000505;
+  color: white; */
   grid-area: project2;
   justify-self: center;
 }
 
 #project3 {
-  background-color: #000505;
-  color: white;
+  /* background-color: #000505;
+  color: white; */
   grid-area: project3;
   justify-self: start;
 }
