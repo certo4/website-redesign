@@ -2,7 +2,8 @@ import React from "react";
 import styled, { ThemeProvider } from 'styled-components';
 
 const ThemeToggleContext = React.createContext({
-  toggle: () => {}
+  darkToggle: () => {},
+  lightToggle: () => {}
 });
 
 export const useTheme = 
@@ -16,17 +17,23 @@ export const MyThemeProvider = ({ children }) => {
   });
 
   // define toggle function
-  const toggle = () => {
-    const mode = (themeState.mode === 'light' 
-                   ? `dark` 
-                   : `light`);
+  const darkToggle = () => {
+    const mode = (themeState.mode = 'dark');
+    setThemeState({ mode: mode });
+  };
+
+  const lightToggle = () => {
+    const mode = (themeState.mode = 'light');
     
    setThemeState({ mode: mode });
   };
   // render both contexts, then Wrapper, then children
   return (
      <ThemeToggleContext.Provider
-       value={{ toggle: toggle }}
+       value={{ 
+         darkToggle: darkToggle,
+         lightToggle: lightToggle 
+        }}
      >
        <ThemeProvider
          theme={{

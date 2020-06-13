@@ -27,8 +27,13 @@ function openMobileMenu() {
 function Navigation() {
   const themeToggle = useTheme();
 
-  function mobileToggle() {
-    themeToggle.toggle();
+  function mobileLightToggle() {
+    themeToggle.lightToggle();
+    closeMobileMenu();
+  }
+
+  function mobileDarkToggle() {
+    themeToggle.darkToggle();
     closeMobileMenu();
   }
 
@@ -41,8 +46,8 @@ function Navigation() {
         <span className="linkedin"><i className="fab fa-linkedin-in"></i></span>
       </div>
       <div className="mode-toggle">
-        <span className="sun-nav-l" id="sun" onClick={() => themeToggle.toggle()}><i class="fas fa-sun"></i></span>
-        <span className="moon-nav-l" id="moon" ><i class="fas fa-moon"></i></span>
+        <span className="sun-nav-l" id="sun" onClick={() => themeToggle.lightToggle()}><i class="fas fa-sun"></i></span>
+        <span className="moon-nav-l" id="moon" onClick={() => themeToggle.darkToggle()}><i class="fas fa-moon"></i></span>
       </div>
       <ul className="navigation-menu">
         <Link to='/'>
@@ -60,8 +65,8 @@ function Navigation() {
         <span className="close-mobile" onClick={closeMobileMenu}><i class="fas fa-times"></i></span>
           {/* <div className="m-menu-items"> */}
             <div className="mobile-toggle">
-              <span className="sun-nav-m" id="sun" onClick={mobileToggle}><i class="fas fa-sun"></i></span>
-              <span className="moon-nav-m" id="moon" onClick={closeMobileMenu}><i class="fas fa-moon"></i></span>
+              <span className="sun-nav-m" id="sun" onClick={mobileLightToggle}><i class="fas fa-sun"></i></span>
+              <span className="moon-nav-m" id="moon" onClick={mobileDarkToggle}><i class="fas fa-moon"></i></span>
             </div>
             <ul className="mobile-navigation-menu">
               <li id="home-link" onClick={closeMobileMenu}><Link to='/'>Info</Link></li>
