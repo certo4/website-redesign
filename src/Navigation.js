@@ -40,10 +40,15 @@ function Navigation() {
   return (
       <header>
       <div className="header-container">
-      <img className="logo" src="https://www.camilarovalino.com/hubfs/Billie-Eilish-Everything-I-Wanted.jpg" alt="billie-eilish" />
+      {/* <img className="logo" src="https://www.camilarovalino.com/hubfs/Personal%20Website/Logo/Original%20logo(8)%20(1).png" alt="logo" /> */}
+      {/* <img className="logo" src="https://www.camilarovalino.com/hubfs/Personal%20Website/Logo/Original%20logo(8)%20(3).png" alt="logo" /> */}
+      <Link to='/' className="logo">
+        {/* <img className="logo" src="https://f.hubspotusercontent20.net/hubfs/5964876/Personal%20Website/Logo/Original%20logo(8)%20(4).png" alt="logo" /> */}
+        <img className="logo" src="https://www.camilarovalino.com/hubfs/Personal%20Website/Logo/Original%20logo(8)%20(3).png" alt="logo" />
+      </Link>
       <div className="icons">
-        <span className="github"><i className="fab fa-github-alt"></i></span>
-        <span className="linkedin"><i className="fab fa-linkedin-in"></i></span>
+      <span className="linkedin"><i className="fab fa-linkedin-in"></i></span>
+        <span className="github"><i class="fab fa-github"></i></span>
       </div>
       <div className="mode-toggle">
         <span className="sun-nav-l" id="sun" onClick={() => themeToggle.lightToggle()}><i class="fas fa-sun"></i></span>
@@ -56,10 +61,11 @@ function Navigation() {
         <Link to='/projects'>
           <li><a id="projects-link" href="#">Projects</a></li>
         </Link>
-        <li><a id="contact-link" href="#">Contact</a></li>
+        <li><a id="contact-link" href="#footer">Contact</a></li>
       </ul>
       </div>
       <div className="mobile-menu-container">
+        {/* <img className="logo-mobile" id="logo-mobile" src="https://f.hubspotusercontent20.net/hubfs/5964876/Personal%20Website/Logo/Original%20logo(8)%20(4).png" alt="logo" /> */}
         <span className="menu-icon" id="menu-icon" onClick={openMobileMenu}><i class="fas fa-bars"></i></span>
         <div className="mobile-menu" id="mobile-menu">
         <span className="close-mobile" onClick={closeMobileMenu}><i class="fas fa-times"></i></span>
@@ -71,11 +77,11 @@ function Navigation() {
             <ul className="mobile-navigation-menu">
               <li id="home-link" onClick={closeMobileMenu}><Link to='/'>Info</Link></li>
               <li id="projects-link" onClick={closeMobileMenu}><Link to='/projects'>Projects</Link></li>
-              <li><a id="contact-link" href="#" onClick={closeMobileMenu}>Contact</a></li>
+              <li><a id="contact-link" href="#footer" onClick={closeMobileMenu}>Contact</a></li>
             </ul>
             <div className="icons-m">
-              <span className="github-m"><i className="fab fa-github-alt"></i></span>
-              <span className="linkedin-m"><i className="fab fa-linkedin-in"></i></span>
+            <span className="linkedin-m"><i className="fab fa-linkedin-in"></i></span>
+              <span className="github-m"><i className="fab fa-github"></i></span>
             </div>
           </div>
         </div>

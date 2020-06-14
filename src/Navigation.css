@@ -18,11 +18,16 @@
   "logo logo-icons . toggle menuItems menuItems";
 }
 
-.logo {
-  height: 64px;
+a.logo {
   /* grid-area: logo; */
   grid-area: logo;
-  justify-self: end;
+  justify-self: start;
+  align-self: center;
+  margin-left: 30px;
+}
+
+img.logo {
+  height: 45px;
 }
 
 .icons {
@@ -30,10 +35,10 @@
   align-items: center;
   /* justify-content: space-between; */
   width: 120px;
-  margin-left: 40px;
+  margin-left: 85px;
   justify-self: start;
   line-height: 62px;
-  grid-area: logo-icons;
+  grid-area: logo;
 }
 
 span.github, span.linkedin {
@@ -42,8 +47,9 @@ span.github, span.linkedin {
   margin: 16px;
 }
 
-.fa-github-alt, .fa-linkedin-in {
+.fa-github, .fa-linkedin-in {
   font-size: 20px;
+  cursor: pointer;
 }
 
 .mode-toggle {
@@ -133,7 +139,7 @@ span.moon-nav:hover {
 
 span.sun-nav-l {
   grid-area: icons;
-  color: #ced3dc;
+  color: #3A4040;
   justify-self: end;
   align-self: start;
   cursor: pointer;
@@ -142,16 +148,9 @@ span.sun-nav-l {
   margin-right: 16px;
 }
 
-span.sun-nav-l:hover {
-  color: #ced3dc;
-  text-shadow: 0 0 5px #ced3dc;
-  transform: scale(1.3);
-  transition: 0.5s;
-}
-
 span.moon-nav-l {
   grid-area: icons;
-  color: #ced3dc;
+  color: #3A4040;
   place-self: start;
   cursor: pointer;
   opacity: 0;
@@ -160,9 +159,16 @@ span.moon-nav-l {
   margin-right: 16px;
 }
 
-span.moon-nav-l:hover {
-  color: #ced3dc;
-  text-shadow: 0 0 5px #ced3dc;
+span.sun-nav-l:hover, span.moon-nav-l:hover {
+  color: white;
+  text-shadow: 0 0 5px grey;
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
+span.sun-nav-l:hover i, span.moon-nav-l:hover i {
+  color: white;
+  text-shadow: 0 0 5px grey;
   transform: scale(1.3);
   transition: 0.5s;
 }
@@ -184,7 +190,7 @@ span.moon-nav-l:hover {
   /* grid-template-areas: 
   "logo icons toggle menuItems menuItems"; */
   grid-template-areas: 
-  ". . . . . . mobileIcon";
+  "logo-mobile . . . . . mobileIcon";
 }
 
 .menu-icon {
@@ -326,8 +332,16 @@ span.linkedin-m {
   margin-right: 16px;
 }
 
-span.linkedin-m i.fa-linkedin-in, span.github-m i.fa-github-alt {
+span.linkedin-m i.fa-linkedin-in, span.github-m i.fa-github {
   font-size: 30px;
+}
+
+.logo-mobile {
+  height: 35px;
+  /* grid-area: logo; */
+  grid-area: logo-mobile;
+  justify-self: end;
+  align-self: center;
 }
 
 @keyframes fadeOut {

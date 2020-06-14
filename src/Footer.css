@@ -6,10 +6,53 @@
   min-width: 385px;
   height: 150px;
   background-color: #000505;
-  z-index: 999;
+  /* z-index: 999; */
   display: grid;
-  grid-template-columns: 0.65fr repeat(4, 1fr);
-  grid-template-rows: 150px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 50px;
   grid-template-areas: 
-  "logo icons . menuItems menuItems";
+  "footer-icons"
+  "copyright";
+}
+
+.copyright {
+  width: 100%;
+  min-width: 385px;
+  height: 50px;
+  /* background-color: #131515; */
+  grid-area: copyright;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icons {
+  grid-area: footer-icons;
+  place-self: center;
+  display: flex;
+}
+
+.copyright-icon, .footer-icon {
+  color: #3A4040;
+}
+
+#linkedin-footer, #email-footer, #github-footer {
+  font-size: 40px;
+  color: #3A4040;
+  margin: 0 40px;
+  cursor: pointer;
+} 
+
+#linkedin-footer:hover, #email-footer:hover, #github-footer:hover {
+  color: white;
+  text-shadow: 0 0 5px grey;
+}
+
+.fa-copyright {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+div.copyright p {
+  color: #3A4040;
 }
