@@ -40,7 +40,7 @@ function Navigation() {
   return (
     <header>
       <div className="header-container">
-        <Link to='/' className="logo"><img className="logo" src="https://www.camilarovalino.com/hubfs/Personal%20Website/Logo/Original%20logo(8)%20(3).png" alt="logo" /></Link>
+        <Link to='/' className="logo"><img className="logo" src="https://f.hubspotusercontent20.net/hubfs/5964876/Personal%20Website/Logo/light-logo.png" alt="logo" /></Link>
       {/* <div className="icons">
         <span className="linkedin"><i className="fab fa-linkedin-in"></i></span>
         <span className="github"><i class="fab fa-github"></i></span>

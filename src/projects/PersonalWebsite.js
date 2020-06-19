@@ -22,7 +22,7 @@ function ProjectCard() {
           <img className="card-gif" src="https://media.giphy.com/media/KDsNRSAxtKGihU3er4/giphy.gif" alt="Website now" />
         </div>
         <ProjectInfo className="card-info">
-          <p>In order to learn more about front-end web development I created the first version of my personal
+          <p>In order to learn more about front-end web development I created <a href="https://pages.camilarovalino.com/" target="_blank">the first version</a> of my personal
           website from top to bottom in HTML, CSS, JavaScript and hosted it in HubSpot. The concept was that my website would contain three pages 
           with background, current work, and contact. The home page would only be a music player that would take you through each of the pages.</p><br /> 
           

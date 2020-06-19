@@ -47,10 +47,9 @@ setInterval(function() {
 function Background() {
   return (
     <div className="sky-container">
-      <img className="shooting-star" src="https://www.camilarovalino.com/hubfs/Personal%20Website/shooting%20star%20(2)-1-1.png" alt="shooting-star" />
       <div id="star-container">
-        <img id="shooting-stars1" className="shooting-stars" src="https://www.camilarovalino.com/hubfs/Personal%20Website/Shooting%20stars.png" alt="shooting-stars" />
-        <img id="shooting-stars2" className="shooting-stars" src="https://www.camilarovalino.com/hubfs/Personal%20Website/Shooting%20stars.png" alt="shooting-stars" />
+        <img id="shooting-stars1" className="shooting-stars" src="https://f.hubspotusercontent20.net/hubfs/5964876/Personal%20Website/Shooting%20stars.png" alt="shooting-stars" />
+        <img id="shooting-stars2" className="shooting-stars" src="https://f.hubspotusercontent20.net/hubfs/5964876/Personal%20Website/Shooting%20stars.png" alt="shooting-stars" />
       </div>
 
       {/* BACKGROUND STARS & ANIMATIONS */}

@@ -27,12 +27,12 @@ function Content() {
           to find what I love to do.</p><br /></li>
           <li><p>I fell in love with Computer Science in my third year at school. Studying Computer Science 
           expanded my intellectual comfort zones and inspired me to approach new challenges with an open 
-          mind. I learned to code in C and C++ while tackling <a href="/projects">projects</a> for every 
+          mind. I learned to code in C and C++ while tackling <a href="/projects" target="_blank">projects</a> for every 
           new CS fundamental concept I learned. I was encouraged to think dynamically and be resourceful 
           when finding answers to technical questions. All of these reasons inspired me to pursue a career 
           in tech.</p><br /></li>
           <li><p>At Tufts, I was also a co-project manager of 
-          a <a href="https://www.davisprojectsforpeace.org/projects/projects/2018/node/6192">
+          a <a href="https://www.davisprojectsforpeace.org/projects/projects/2018/node/6192" target="_blank">
           Digital Libraries project</a> in rural and coastal areas of Ecuador for more than two years.
           </p><br /></li>
         </Box>
@@ -43,7 +43,7 @@ function Content() {
           overcome it. This project was a unique chance to remain connected and give back to the country I 
           come from.</p><br /></li>
           <li><p>After graduating school, I started working in HubSpot! I self-taught front-end web development 
-          during my time at HS by creating my personal website -  you can <a href="/card">read more about 
+          during my time at HS by creating my personal website -  you can <a href="/personal-website" target="_blank">read more about 
           that here</a>. Now, as a specialist on design, I am working on the front-end of customer’s 
           websites on a daily basis. I am looking forward to continue building my career and skills in tech.
           </p><br /><br /><br /><br /><br /></li>
