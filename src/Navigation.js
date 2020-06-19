@@ -10,6 +10,7 @@ function closeMobileMenu() {
   setTimeout(function() {
     document.getElementById("mobile-menu").style.display = "none";
     document.getElementById("root").style.display = "static";
+    document.getElementById("menu-icon").style.display = "inline";
   }, 500);
 }
 
@@ -19,6 +20,7 @@ function openMobileMenu() {
 
   setTimeout(function() {
     document.getElementById("mobile-menu").style.display = "grid";
+    document.getElementById("menu-icon").style.display = "none";
   }, 500);
 }
 

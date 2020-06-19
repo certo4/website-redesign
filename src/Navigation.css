@@ -214,12 +214,12 @@ span.sun-nav-l:hover i, span.moon-nav-l:hover i {
 
 .mobile-menu {
   display: none;
-  width: 100vw;
+  width: 110vw;
   background-color: #000505;
   position: relative;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 110vh;
   min-height: 410px;
   z-index: 999;
   grid-template-columns: repeat(3, 1fr);
@@ -257,22 +257,22 @@ span.sun-nav-l:hover i, span.moon-nav-l:hover i {
 
 span.sun-nav-m {
   grid-area: m-sun;
-  color: #ced3dc;
+  color: white;
   justify-self: end;
   align-self: start;
   cursor: pointer;
-  opacity: 0;
-  animation: fadeIn 1s ease-in forwards;
+  /* opacity: 0; */
+  /* animation: fadeIn 1s ease-in forwards; */
   margin-right: 16px;
 }
 
 span.moon-nav-m {
   grid-area: m-moon;
-  color: #ced3dc;
+  color: white;
   place-self: start;
   cursor: pointer;
-  opacity: 0;
-  animation: fadeIn 1s ease-in forwards;
+  /* opacity: 0; */
+  /* animation: fadeIn 1s ease-in forwards; */
   margin-left: 16px;
   margin-right: 16px;
 }
@@ -318,24 +318,25 @@ ul.mobile-navigation-menu li a, ul.mobile-navigation-menu a {
   "m-github m-linkedin";
 }
 
-span.github-m {
+a span.github-m {
   grid-area: m-github;
   color: white;
   justify-self: end;
   align-self: start;
   cursor: pointer;
-  opacity: 0;
-  animation: fadeIn 1s ease-in forwards;
+  /* opacity: 0; */
+  /* animation: fadeIn 1s ease-in forwards; */
   margin-right: 16px;
+  margin-left: 16px;
 }
 
-span.linkedin-m {
+a span.linkedin-m {
   grid-area: m-linkedin;
   color: white;
   place-self: start;
   cursor: pointer;
-  opacity: 0;
-  animation: fadeIn 1s ease-in forwards;
+  /* opacity: 0; */
+  /* animation: fadeIn 1s ease-in forwards; */
   margin-left: 16px;
   margin-right: 16px;
 }
