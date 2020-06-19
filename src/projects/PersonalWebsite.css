@@ -36,13 +36,30 @@ h1.card-h1 {
   grid-area: card-header;
 }
 
+.card-gallery {
+  height: auto;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  grid-area: card-image;
+  justify-self: end;
+}
+
 .card-img {
   height: 400px;
   width: 400px;
-  justify-self: end;
-  grid-area: card-image;
   border-radius: 3px;
   box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+  margin-bottom: 50px;
+}
+
+.card-gif {
+  height: 400px;
+  width: 400px;
+  border-radius: 3px;
+  box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+  margin-bottom: 50px;
+  object-fit: cover;
 }
 
 .card-info {
@@ -52,7 +69,6 @@ h1.card-h1 {
   grid-area: card-text;
   place-self: start;
   padding: 30px 35px 30px 45px;
-  text-align: justify;
   font-size: 20px;
   box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
   border-radius: 3px;
@@ -72,6 +88,10 @@ h1.card-h1 {
     width: 400px;
   }
 
+  .card-gallery {
+    width: 350px;
+  }
+
   .card-img {
     width: 350px;
     height: 350px;
@@ -85,7 +105,7 @@ h1.card-h1 {
     justify-content: space-around;
   }
 
-  .card-info, .card-img {
+  .card-info, .card-gallery {
     margin: 50px auto;
   }
 }
@@ -103,6 +123,10 @@ h1.card-h1 {
 
   .card-info {
     width: 300px;
+  }
+
+  .card-gallery {
+    width: 250px;
   }
 
   .card-img {

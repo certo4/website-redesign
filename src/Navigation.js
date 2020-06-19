@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navigation.css';
 import { Link } from 'react-router-dom';
-import { useTheme } from './ThemeContext';
+import { useTheme } from './site-themes/ThemeContext';
 
 function closeMobileMenu() {
   document.getElementById("mobile-menu").style.animationName = "fadeOut";
@@ -35,26 +35,20 @@ function Navigation() {
   }
 
   return (
-      <header>
+    <header>
       <div className="header-container">
-      <Link to='/' className="logo">
-        <img className="logo" src="https://www.camilarovalino.com/hubfs/Personal%20Website/Logo/Original%20logo(8)%20(3).png" alt="logo" />
-      </Link>
-      <div className="icons">
-      <span className="linkedin"><i className="fab fa-linkedin-in"></i></span>
+        <Link to='/' className="logo"><img className="logo" src="https://www.camilarovalino.com/hubfs/Personal%20Website/Logo/Original%20logo(8)%20(3).png" alt="logo" /></Link>
+      {/* <div className="icons">
+        <span className="linkedin"><i className="fab fa-linkedin-in"></i></span>
         <span className="github"><i class="fab fa-github"></i></span>
-      </div>
+      </div> */}
       <div className="mode-toggle">
         <span className="sun-nav-l" id="sun" onClick={() => themeToggle.lightToggle()}><i class="fas fa-sun"></i></span>
         <span className="moon-nav-l" id="moon" onClick={() => themeToggle.darkToggle()}><i class="fas fa-moon"></i></span>
       </div>
       <ul className="navigation-menu">
-        <Link to='/'>
-          <li id="home-link"><a href="#">Info</a></li>
-        </Link>
-        <Link to='/projects'>
-          <li><a id="projects-link" href="#">Projects</a></li>
-        </Link>
+        <Link to='/'><li id="home-link"><a href="#">Info</a></li></Link>
+        <Link to='/projects'><li><a id="projects-link" href="#">Projects</a></li></Link>
         <li><a id="contact-link" href="#footer">Contact</a></li>
       </ul>
       </div>
@@ -72,8 +66,8 @@ function Navigation() {
             <li><a id="contact-link" href="#footer" onClick={closeMobileMenu}>Contact</a></li>
           </ul>
           <div className="icons-m">
-          <span className="linkedin-m"><i className="fab fa-linkedin-in"></i></span>
-            <span className="github-m"><i className="fab fa-github"></i></span>
+            <a href="https://www.linkedin.com/in/camila-rovalino"><span className="linkedin-m"><i className="fab fa-linkedin-in"></i></span></a>
+            <a href="https://github.com/certo4"><span className="github-m"><i className="fab fa-github"></i></span></a>
           </div>
         </div>
       </div>

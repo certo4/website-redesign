@@ -4,8 +4,10 @@ import Navigation from './Navigation';
 import Home from './Home';
 import Projects from './Projects';
 import Footer from './Footer';
-import NotFound from './NotFound';
-import ProjectCard from './ProjectCard';
+import NotFound from './system-pages/NotFound';
+import PersonalWebsite from './projects/PersonalWebsite';
+import UniversalMachine from './projects/UniversalMachine';
+import Gerp from './projects/Gerp';
 
 import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 
@@ -20,7 +22,9 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/projects" component={Projects} />
         <Route exact path="/404" component={NotFound} />
-        <Route path="/card" component={ProjectCard} />
+        <Route path="/personal-website" component={PersonalWebsite} />
+        <Route path="/um" component={UniversalMachine} />
+        <Route path="/gerp" component={Gerp} />
         <Redirect to="/404" />
         <Home />
       </Switch>

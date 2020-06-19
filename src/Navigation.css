@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 
+p {
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.75;
+  letter-spacing: .5px;
+  margin: 0;
+  text-indent: 50px;
+}
+
+p a {
+  text-decoration: none;
+  color: #4b88a2;
+  transition: text-decoration 2s ease;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
 .header-container {
   position: fixed;
   top: 0;

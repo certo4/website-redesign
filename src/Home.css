@@ -109,25 +109,25 @@ span.moon:hover {
 #first-box {
   grid-area: list1;
   width: 400px;
-  height: 400px;
-  place-self: end;
+  height: auto;
+  justify-self: end;
   padding: 30px 35px 30px 45px;
-  text-align: justify;
   font-size: 20px;
   box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
   border-radius: 3px;
+  list-style: none;
 }
 
 #second-box {
   grid-area: list2;
   width: 400px;
-  height: 400px;
+  height: auto;
   place-self: start;
   padding: 30px 35px 30px 45px;
-  text-align: justify;
   font-size: 20px;
   box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
   border-radius: 3px;
+  list-style: none;
 }
 
 .dark {
