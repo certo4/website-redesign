@@ -41,7 +41,7 @@ function ProjectCard() {
           integrated in them or I could use CSS grid. I opted for grid and I cannot sing its praises enough. With minimal media queries and 
           very few lines of code I had made my website fully mobile responsive.</p><br />
 
-          <p>You can find the full source code for the current and the original website below.</p><br />
+          {/* <p>You can find the full source code for the current and the original website below.</p><br /> */}
         </ProjectInfo>
       </div>
   );

@@ -15,7 +15,7 @@ function ProjectCard() {
 
   return (
       <div className="card-container">
-        <ProjectTitle className="card-h1">Universal Machine</ProjectTitle>
+        <ProjectTitle className="um-card-h1">Universal Machine</ProjectTitle>
         <img className="card-img" src="https://f.hubspotusercontent20.net/hubfs/5964876/Personal%20Website/Projects/kcachegrind.png" alt="kcachegrind" />
         <ProjectInfo className="card-info">
           <p>Pair programming project in which we had to build an emulator of a Turing-complete machine with 14 instructions and a 

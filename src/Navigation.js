@@ -9,6 +9,7 @@ function closeMobileMenu() {
 
   setTimeout(function() {
     document.getElementById("mobile-menu").style.display = "none";
+    document.getElementById("root").style.display = "static";
   }, 500);
 }
 

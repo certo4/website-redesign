@@ -20,7 +20,7 @@
   animation: fadeIn 1s ease-in forwards;
 }
 
-h1.card-h1 {
+h1.um-card-h1 {
   display: inline-block;
   padding: 10px;
   font-size: 50px;
@@ -96,8 +96,8 @@ h1.card-h1 {
 }
 
 @media only screen and (max-width: 540px) {
-  h1.card-h1 {
-    font-size: 60px;
+  h1.um-card-h1 {
+    font-size: 50px;
   } 
 
   .card-info {
