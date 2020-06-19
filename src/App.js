@@ -19,13 +19,13 @@ function App() {
       <Background />
       <Navigation />
       <Switch>
-        <Route exact path="https://agile-sands-88978.herokuapp.com/" component={Home} />
-        <Route path="https://agile-sands-88978.herokuapp.com/projects" component={Projects} />
-        <Route exact path="https://agile-sands-88978.herokuapp.com/404" component={NotFound} />
-        <Route path="https://agile-sands-88978.herokuapp.com/personal-website" component={PersonalWebsite} />
-        <Route path="https://agile-sands-88978.herokuapp.com/um" component={UniversalMachine} />
-        <Route path="https://agile-sands-88978.herokuapp.com/gerp" component={Gerp} />
-        <Redirect to="https://agile-sands-88978.herokuapp.com/404" />
+        <Route exact path="/" component={Home} />
+        <Route path="/projects" component={Projects} />
+        <Route exact path="/404" component={NotFound} />
+        <Route path="/personal-website" component={PersonalWebsite} />
+        <Route path="/um" component={UniversalMachine} />
+        <Route path="/gerp" component={Gerp} />
+        <Redirect to="/404" />
         <Home />
       </Switch>
       <Footer />
