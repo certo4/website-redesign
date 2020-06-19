@@ -52,9 +52,7 @@ function Background() {
         <img id="shooting-stars1" className="shooting-stars" src="https://www.camilarovalino.com/hubfs/Personal%20Website/Shooting%20stars.png" alt="shooting-stars" />
         <img id="shooting-stars2" className="shooting-stars" src="https://www.camilarovalino.com/hubfs/Personal%20Website/Shooting%20stars.png" alt="shooting-stars" />
       </div>
-      {/* <img className="shooting-stars" src="https://www.camilarovalino.com/hubfs/Personal%20Website/Shooting%20stars.png" alt="shooting-stars" />
-      <img className="shooting-stars" src="https://www.camilarovalino.com/hubfs/Personal%20Website/Shooting%20stars.png" alt="shooting-stars" />
-      <img className="shooting-stars" src="https://www.camilarovalino.com/hubfs/Personal%20Website/Shooting%20stars.png" alt="shooting-stars" /> */}
+
       {/* BACKGROUND STARS & ANIMATIONS */}
       <div className="stars-0"></div>
       <div className="stars-1"></div>

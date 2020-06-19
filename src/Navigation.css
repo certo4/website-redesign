@@ -9,17 +9,13 @@
   background-color: #000505;
   z-index: 999;
   display: grid;
-  /* grid-template-columns: .65fr repeat(4, 1fr); */
   grid-template-columns: .65fr 1fr .35fr repeat(3, 1fr);
   grid-template-rows: 62px;
-  /* grid-template-areas: 
-  "logo icons toggle menuItems menuItems"; */
   grid-template-areas: 
-  "logo logo-icons . toggle menuItems menuItems";
+  "logo logo . toggle menuItems menuItems";
 }
 
 a.logo {
-  /* grid-area: logo; */
   grid-area: logo;
   justify-self: start;
   align-self: center;
@@ -33,7 +29,6 @@ img.logo {
 .icons {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   width: 120px;
   margin-left: 85px;
   justify-self: start;
@@ -42,7 +37,6 @@ img.logo {
 }
 
 span.github, span.linkedin {
-  /* grid-area: icons; */
   color: white;
   margin: 16px;
 }
@@ -184,11 +178,8 @@ span.sun-nav-l:hover i, span.moon-nav-l:hover i {
   height: 64px;
   background-color: #000505;
   z-index: 999;
-  /* grid-template-columns: .65fr repeat(4, 1fr); */
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 62px;
-  /* grid-template-areas: 
-  "logo icons toggle menuItems menuItems"; */
   grid-template-areas: 
   "logo-mobile . . . . . mobileIcon";
 }
@@ -338,7 +329,6 @@ span.linkedin-m i.fa-linkedin-in, span.github-m i.fa-github {
 
 .logo-mobile {
   height: 35px;
-  /* grid-area: logo; */
   grid-area: logo-mobile;
   justify-self: end;
   align-self: center;
@@ -356,8 +346,4 @@ span.linkedin-m i.fa-linkedin-in, span.github-m i.fa-github {
   .mobile-menu-container {
     display: grid; 
   }
-
-  /* .mobile-menu {
-    display: grid;
-  } */
 }

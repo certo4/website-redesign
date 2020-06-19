@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React from 'react';
 import './Navigation.css';
 import { Link } from 'react-router-dom';
 import { useTheme } from './ThemeContext';
@@ -10,8 +10,6 @@ function closeMobileMenu() {
   setTimeout(function() {
     document.getElementById("mobile-menu").style.display = "none";
   }, 500);
-  // document.getElementById("mobile-menu").style.display = "none";
-  // document.getElementById("footer").style.display = "grid";
 }
 
 function openMobileMenu() {
@@ -21,7 +19,6 @@ function openMobileMenu() {
   setTimeout(function() {
     document.getElementById("mobile-menu").style.display = "grid";
   }, 500);
-  // document.getElementById("footer").style.display = "none";
 }
 
 function Navigation() {
@@ -40,10 +37,7 @@ function Navigation() {
   return (
       <header>
       <div className="header-container">
-      {/* <img className="logo" src="https://www.camilarovalino.com/hubfs/Personal%20Website/Logo/Original%20logo(8)%20(1).png" alt="logo" /> */}
-      {/* <img className="logo" src="https://www.camilarovalino.com/hubfs/Personal%20Website/Logo/Original%20logo(8)%20(3).png" alt="logo" /> */}
       <Link to='/' className="logo">
-        {/* <img className="logo" src="https://f.hubspotusercontent20.net/hubfs/5964876/Personal%20Website/Logo/Original%20logo(8)%20(4).png" alt="logo" /> */}
         <img className="logo" src="https://www.camilarovalino.com/hubfs/Personal%20Website/Logo/Original%20logo(8)%20(3).png" alt="logo" />
       </Link>
       <div className="icons">
@@ -65,27 +59,24 @@ function Navigation() {
       </ul>
       </div>
       <div className="mobile-menu-container">
-        {/* <img className="logo-mobile" id="logo-mobile" src="https://f.hubspotusercontent20.net/hubfs/5964876/Personal%20Website/Logo/Original%20logo(8)%20(4).png" alt="logo" /> */}
         <span className="menu-icon" id="menu-icon" onClick={openMobileMenu}><i class="fas fa-bars"></i></span>
         <div className="mobile-menu" id="mobile-menu">
         <span className="close-mobile" onClick={closeMobileMenu}><i class="fas fa-times"></i></span>
-          {/* <div className="m-menu-items"> */}
-            <div className="mobile-toggle">
-              <span className="sun-nav-m" id="sun" onClick={mobileLightToggle}><i class="fas fa-sun"></i></span>
-              <span className="moon-nav-m" id="moon" onClick={mobileDarkToggle}><i class="fas fa-moon"></i></span>
-            </div>
-            <ul className="mobile-navigation-menu">
-              <li id="home-link" onClick={closeMobileMenu}><Link to='/'>Info</Link></li>
-              <li id="projects-link" onClick={closeMobileMenu}><Link to='/projects'>Projects</Link></li>
-              <li><a id="contact-link" href="#footer" onClick={closeMobileMenu}>Contact</a></li>
-            </ul>
-            <div className="icons-m">
-            <span className="linkedin-m"><i className="fab fa-linkedin-in"></i></span>
-              <span className="github-m"><i className="fab fa-github"></i></span>
-            </div>
+          <div className="mobile-toggle">
+            <span className="sun-nav-m" id="sun" onClick={mobileLightToggle}><i class="fas fa-sun"></i></span>
+            <span className="moon-nav-m" id="moon" onClick={mobileDarkToggle}><i class="fas fa-moon"></i></span>
+          </div>
+          <ul className="mobile-navigation-menu">
+            <li id="home-link" onClick={closeMobileMenu}><Link to='/'>Info</Link></li>
+            <li id="projects-link" onClick={closeMobileMenu}><Link to='/projects'>Projects</Link></li>
+            <li><a id="contact-link" href="#footer" onClick={closeMobileMenu}>Contact</a></li>
+          </ul>
+          <div className="icons-m">
+          <span className="linkedin-m"><i className="fab fa-linkedin-in"></i></span>
+            <span className="github-m"><i className="fab fa-github"></i></span>
           </div>
         </div>
-      {/* </div> */}
+      </div>
     </header>
   );
 }

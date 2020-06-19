@@ -2,7 +2,6 @@
 
 
 .content-container {
-  /* position: absolute; */
   position: relative;
   top: 0;
   left: 0;
@@ -14,13 +13,7 @@
   background-color: transparent;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* grid-template-rows: 2.5fr 150px 100px auto; */
   grid-template-rows: 2.5fr 150px auto;
-  /* grid-template-areas: 
-  "header header header header"
-  ". header2 header2 ."
-  ". sun moon ."
-  "lists lists lists lists"; */
   grid-template-areas: 
   "header header header header"
   ". header2 header2 ."
@@ -29,8 +22,6 @@
 
 h1.header-home {
   display: inline-block;
-  /* color: white;
-  background: #000505; */
   padding: 10px;
   font-size: 50px;
   grid-area: header;
@@ -39,7 +30,6 @@ h1.header-home {
   font-size: 120px;
   text-align: center;
   box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
-  /* border-radius: 10px; */
   transform: translateY(-100px);
   opacity: 0;
   animation: moveDown 1s ease-out forwards;
@@ -99,10 +89,6 @@ span.moon:hover {
   transition: 0.5s;
 }
 
-/* .fa-sun, .fa-moon {
-  font-size: 25px;
-} */
-
 .lists-container {
   grid-area: lists;
   display: grid;
@@ -125,15 +111,11 @@ span.moon:hover {
   width: 400px;
   height: 400px;
   place-self: end;
-  /* color: white;
-  background-color: #000505; */
   padding: 30px 35px 30px 45px;
   text-align: justify;
   font-size: 20px;
   box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
   border-radius: 3px;
-  animation-name: none;
-  animation-duration: 0s;
 }
 
 #second-box {
@@ -141,16 +123,11 @@ span.moon:hover {
   width: 400px;
   height: 400px;
   place-self: start;
-  /* color: white;
-  background-color: #000505; */
   padding: 30px 35px 30px 45px;
   text-align: justify;
   font-size: 20px;
   box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
   border-radius: 3px;
-  animation-name: none;
-  animation-duration: 0s;
-  /* animation-fill-mode: forward; */
 }
 
 .dark {

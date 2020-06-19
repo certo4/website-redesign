@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
 
 .not-found-container {
+  position: relative;
   height: 100vh;
   min-height: 600px;
   min-width: 385px;
@@ -18,6 +19,7 @@
   font-size: 50px;
   font-family: 'Bungee Hairline', cursive;
   font-size: 120px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 710px) {

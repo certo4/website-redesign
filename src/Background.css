@@ -17,22 +17,18 @@ body {
 
 #shooting-stars1 {
   height: 100px;
-  /* display:none; */
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
-  /* animation: shooting-star 3s infinite; */
 }
 
 #shooting-stars2 {
   height: 60px;
-  /* display:none; */
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
-  /* animation: shooting-star 3s infinite; */
 }
 
 @keyframes shooting-star1 {
@@ -53,10 +49,7 @@ body {
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  /* background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #690375 67%, #231557 100%); */
-  /* background-color: #000505f2;  */
   background-color: #000505d9;
-  /* background-color: #000505ed; */
   margin: 0;
   padding: 0;
   position: fixed;
@@ -76,14 +69,14 @@ body {
   background:url(https://cdn2.hubspot.net/hubfs/5964876/Personal%20Website/Rewind/stars-total%20flipped.png) repeat top center;
   z-index:0;
   animation-name: shine-section-0;
-  animation-duration: 2s;
+  animation-duration: 1.8s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
 @keyframes shine-section-0 {
   0%   {opacity: 1;}
-  50%  {opacity: 0;}
+  50%  {opacity: 0.5;}
   100% {opacity: 1;}
 }
 
@@ -106,7 +99,7 @@ body {
 
 @keyframes shine-section-1 {
   0%   {opacity: 1;}
-  50%  {opacity: 0;}
+  50%  {opacity: 0.2;}
   100% {opacity: 1;}
 }
 
@@ -128,9 +121,9 @@ body {
 }
 
 @keyframes shine-section-2 {
-  0%   {opacity: 0;}
+  0%   {opacity: 0.2;}
   50%  {opacity: 1;}
-  100% {opacity: 0;}
+  100% {opacity: 0.2;}
 }
 
 .stars-3 {
@@ -145,15 +138,15 @@ body {
   background:url(https://cdn2.hubspot.net/hubfs/5964876/Personal%20Website/Rewind/stars-part%203.png) repeat top center;
   z-index:0;
   animation-name: shine-section-3;
-  animation-duration: 2s;
+  animation-duration: 1.75s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
 @keyframes shine-section-3 {
-  0%   {opacity: 0;}
+  0%   {opacity: 0.1;}
   50%  {opacity: 1;}
-  100% {opacity: 0;}
+  100% {opacity: 0.1;}
 }
 
 .stars-4 {

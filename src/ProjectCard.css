@@ -22,8 +22,6 @@
 
 h1.card-h1 {
   display: inline-block;
-  /* color: white;
-  background: #000505; */
   padding: 10px;
   font-size: 50px;
   grid-area: card-header;
@@ -32,7 +30,6 @@ h1.card-h1 {
   font-size: 120px;
   text-align: center;
   box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
-  /* border-radius: 10px; */
   transform: translateY(-100px);
   opacity: 0;
   animation: moveDown 1s ease-out forwards;
@@ -54,8 +51,6 @@ h1.card-h1 {
   height: auto;
   grid-area: card-text;
   place-self: start;
-  /* color: white;
-  background-color: #000505; */
   padding: 30px 35px 30px 45px;
   text-align: justify;
   font-size: 20px;
