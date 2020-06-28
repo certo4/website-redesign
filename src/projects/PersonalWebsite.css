@@ -11,11 +11,12 @@
   background-color: transparent;
   display: grid;
   grid-template-columns: 1fr 0.5fr repeat(4, 1fr);
-  grid-template-rows: 2.5fr auto;
+  grid-template-rows: 2.5fr auto 150px;
   grid-column-gap: 50px;
   grid-template-areas: 
   ". card-header card-header card-header card-header ."
-  ". card-image card-image card-text card-text ."; 
+  ". card-image card-image card-text card-text ."
+  ". previous-project previous-project next-project next-project ."; 
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
 }
@@ -75,6 +76,20 @@ h1.card-h1 {
   animation-name: none;
   animation-duration: 0s;
   margin: 0;
+}
+
+.previous-project {
+  grid-area: previous-project;
+  padding: 30px;
+  width: 100px;
+  height: 100px;
+}
+
+.next-project {
+  grid-area: next-project;
+  padding: 30px;
+  width: 100px;
+  height: 100px;
 }
 
 @media only screen and (max-width: 1230px) {

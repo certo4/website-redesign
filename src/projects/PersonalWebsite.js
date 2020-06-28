@@ -43,6 +43,12 @@ function ProjectCard() {
 
           {/* <p>You can find the full source code for the current and the original website below.</p><br /> */}
         </ProjectInfo>
+        <div className="previous-project">
+          <p><a>Gerp</a></p>
+        </div>
+        <div className="next-project">
+          <p><a>Universal Machine</a></p>
+        </div>
       </div>
   );
 }
