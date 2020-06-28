@@ -13,7 +13,7 @@ function Projects() {
   return (
       <div className="projects-container">
         <Card id="project1" className="project-card">
-          <img className="img-project1" src="https://f.hubspotusercontent20.net/hubfs/5964876/Personal%20Website/Projects/background-tufts-2.png" alt="Camila Rovalino original site" />
+          <img className="img-project1" src="https://f.hubspotusercontent20.net/hubfs/5964876/Personal%20Website/Projects/home-dark-2.png" alt="Camila Rovalino original site" />
           <h3 className="h2-projects" id="h2-projects">Personal Website</h3>
           <Link to="/personal-website"><button className="b1">Learn more</button></Link>
         </Card>

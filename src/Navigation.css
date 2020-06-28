@@ -222,6 +222,17 @@ span.sun-nav-l:hover i, span.moon-nav-l:hover i {
   left: 0;
   height: 110vh;
   min-height: 410px;
+  z-index: 998;
+}
+
+.menu-item-container {
+  display: grid;
+  width: 100vw;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  min-height: 410px;
   z-index: 999;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -262,8 +273,6 @@ span.sun-nav-m {
   justify-self: end;
   align-self: start;
   cursor: pointer;
-  /* opacity: 0; */
-  /* animation: fadeIn 1s ease-in forwards; */
   margin-right: 16px;
 }
 
@@ -272,8 +281,6 @@ span.moon-nav-m {
   color: white;
   place-self: start;
   cursor: pointer;
-  /* opacity: 0; */
-  /* animation: fadeIn 1s ease-in forwards; */
   margin-left: 16px;
   margin-right: 16px;
 }
@@ -325,8 +332,6 @@ a span.github-m {
   justify-self: end;
   align-self: start;
   cursor: pointer;
-  /* opacity: 0; */
-  /* animation: fadeIn 1s ease-in forwards; */
   margin-right: 16px;
   margin-left: 16px;
 }
@@ -336,8 +341,6 @@ a span.linkedin-m {
   color: white;
   place-self: start;
   cursor: pointer;
-  /* opacity: 0; */
-  /* animation: fadeIn 1s ease-in forwards; */
   margin-left: 16px;
   margin-right: 16px;
 }

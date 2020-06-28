@@ -6,21 +6,25 @@ import { useTheme } from './site-themes/ThemeContext';
 function closeMobileMenu() {
   document.getElementById("mobile-menu").style.animationName = "fadeOut";
   document.getElementById("mobile-menu").style.animationDuration = ".5s";
+  
 
   setTimeout(function() {
     document.getElementById("mobile-menu").style.display = "none";
     document.getElementById("root").style.display = "static";
     document.getElementById("menu-icon").style.display = "inline";
+    document.getElementById("logo-mobile").style.display = "inline";
   }, 500);
 }
 
 function openMobileMenu() {
   document.getElementById("mobile-menu").style.animationName = "fadeIn";
   document.getElementById("mobile-menu").style.animationDuration = ".5s";
+  
 
   setTimeout(function() {
     document.getElementById("mobile-menu").style.display = "grid";
     document.getElementById("menu-icon").style.display = "none";
+    document.getElementById("logo-mobile").style.display = "none";
   }, 500);
 }
 
@@ -56,21 +60,24 @@ function Navigation() {
       </ul>
       </div>
       <div className="mobile-menu-container">
+      <Link to='/' className="logo-mobile" id="logo-mobile"><img className="logo-mobile" src="https://f.hubspotusercontent20.net/hubfs/5964876/Personal%20Website/Logo/light-logo.png" alt="logo" /></Link>
         <span className="menu-icon" id="menu-icon" onClick={openMobileMenu}><i class="fas fa-bars"></i></span>
         <div className="mobile-menu" id="mobile-menu">
-        <span className="close-mobile" onClick={closeMobileMenu}><i class="fas fa-times"></i></span>
-          <div className="mobile-toggle">
-            <span className="sun-nav-m" id="sun" onClick={mobileLightToggle}><i class="fas fa-sun"></i></span>
-            <span className="moon-nav-m" id="moon" onClick={mobileDarkToggle}><i class="fas fa-moon"></i></span>
-          </div>
-          <ul className="mobile-navigation-menu">
-            <li id="home-link" onClick={closeMobileMenu}><Link to='/'>Info</Link></li>
-            <li id="projects-link" onClick={closeMobileMenu}><Link to='/projects'>Projects</Link></li>
-            <li><a id="contact-link" href="#footer" onClick={closeMobileMenu}>Contact</a></li>
-          </ul>
-          <div className="icons-m">
-            <a href="https://www.linkedin.com/in/camila-rovalino"><span className="linkedin-m"><i className="fab fa-linkedin-in"></i></span></a>
-            <a href="https://github.com/certo4"><span className="github-m"><i className="fab fa-github"></i></span></a>
+          <div className="menu-item-container">
+            <span className="close-mobile" onClick={closeMobileMenu}><i class="fas fa-times"></i></span>
+            <div className="mobile-toggle">
+              <span className="sun-nav-m" id="sun" onClick={mobileLightToggle}><i class="fas fa-sun"></i></span>
+              <span className="moon-nav-m" id="moon" onClick={mobileDarkToggle}><i class="fas fa-moon"></i></span>
+            </div>
+            <ul className="mobile-navigation-menu">
+              <li id="home-link" onClick={closeMobileMenu}><Link to='/'>Info</Link></li>
+              <li id="projects-link" onClick={closeMobileMenu}><Link to='/projects'>Projects</Link></li>
+              <li><a id="contact-link" href="#footer" onClick={closeMobileMenu}>Contact</a></li>
+            </ul>
+            <div className="icons-m">
+              <a href="https://www.linkedin.com/in/camila-rovalino"><span className="linkedin-m"><i className="fab fa-linkedin-in"></i></span></a>
+              <a href="https://github.com/certo4"><span className="github-m"><i className="fab fa-github"></i></span></a>
+            </div>
           </div>
         </div>
       </div>
